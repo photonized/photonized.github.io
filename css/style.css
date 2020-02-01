@@ -116,7 +116,7 @@ xtype
   background-color: #aebcb9;
 }
 .cd-headline.type .cd-words-wrapper.selected::after {
-  visibility: hidden;
+  visibility: visible;
 }
 .cd-headline.type .cd-words-wrapper.selected b {
   color: #0d0d0d;
@@ -129,7 +129,7 @@ xtype
 }
 .cd-headline.type i {
   position: absolute;
-  visibility: hidden;
+  visibility: visible;
 }
 .cd-headline.type i.in {
   position: relative;
