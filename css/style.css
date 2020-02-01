@@ -122,7 +122,7 @@ xtype
   color: #0d0d0d;
 }
 .cd-headline.type b {
-  visibility: hidden;
+  visibility: visible;
 }
 .cd-headline.type b.is-visible {
   visibility: visible;
