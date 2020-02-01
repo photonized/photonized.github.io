@@ -32,8 +32,6 @@ html {
 }
 
 body {
-  margin-right: auto;
-  margin-left: auto;
   font-size: 1.6rem;
   font-family: "Source Sans Pro", sans-serif;
   color: #aebcb9;
@@ -46,7 +44,7 @@ a {
 
 .cd-headline {
   padding: 15px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   -ms-transform: translateX(-5%) translateY(20%);
@@ -55,15 +53,21 @@ a {
   font-size: 1rem;
   line-height: 1.2;
 }
-
-
-.text {
-  margin-right: 5px;
+@media only screen and (min-width: 768px) {
+  .cd-headline {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-headline {
+    font-size: 1rem;
+  }
 }
 
 .cd-words-wrapper {
   display: inline-block;
-  position: fixed;
+  position: absolute;
   text-align: left;
 }
 .cd-words-wrapper b {
@@ -90,6 +94,7 @@ xtype
 -------------------------------- */
 .cd-headline.type .cd-words-wrapper {
   vertical-align: top;
+  overflow: hidden;
 }
 .cd-headline.type .cd-words-wrapper::after {
   /* vertical bar */
@@ -132,7 +137,7 @@ xtype
   visibility: hidden;
 }
 .cd-headline.type i.in {
-  position: absolute;
+  position: relative;
   visibility: visible;
 }
 
