@@ -116,23 +116,23 @@ xtype
   background-color: #aebcb9;
 }
 .cd-headline.type .cd-words-wrapper.selected::after {
-  visibility: visible;
+  visibility: hidden;
 }
 .cd-headline.type .cd-words-wrapper.selected b {
   color: #0d0d0d;
 }
 .cd-headline.type b {
-  visibility: visible;
+  visibility: hidden;
 }
 .cd-headline.type b.is-visible {
   visibility: visible;
 }
 .cd-headline.type i {
   position: absolute;
-  visibility: visible;
+  visibility: hidden;
 }
 .cd-headline.type i.in {
-  position: relative;
+  position: absolute;
   visibility: visible;
 }
 
