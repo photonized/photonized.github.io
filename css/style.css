@@ -55,17 +55,7 @@ a {
   font-size: 1rem;
   line-height: 1.2;
 }
-@media only screen and (min-width: 768px) {
-  .cd-headline {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-headline {
-    font-size: 1rem;
-  }
-}
+
 
 .text {
   margin-right: 5px;
@@ -100,7 +90,6 @@ xtype
 -------------------------------- */
 .cd-headline.type .cd-words-wrapper {
   vertical-align: top;
-  overflow: hidden;
 }
 .cd-headline.type .cd-words-wrapper::after {
   /* vertical bar */
@@ -143,7 +132,7 @@ xtype
   visibility: hidden;
 }
 .cd-headline.type i.in {
-  position: relative;
+  position: absolute;
   visibility: visible;
 }
 
