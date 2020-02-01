@@ -32,6 +32,8 @@ html {
 }
 
 body {
+  margin-right: auto;
+  margin-left: auto;
   font-size: 1.6rem;
   font-family: "Source Sans Pro", sans-serif;
   color: #aebcb9;
