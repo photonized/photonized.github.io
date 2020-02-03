@@ -45,6 +45,7 @@ html {
 }
 
 body {
+  overflow: hidden;
   font-size: 1.6rem;
   font-family: "Source Sans Pro", sans-serif;
   color: #aebcb9;
@@ -55,15 +56,17 @@ a {
   text-decoration: none;
 }
 
+.block {
+  display: inline-block;
+}
+
 .cd-headline {
-  padding: 15px;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 0.1vh;
-  -ms-transform: translateX(-0vw) translateY(0vh);
-  -webkit-transform: translate(-0vw,0vh);
-  transform: translate(-0vw,0vh);
+  -ms-transform: translateX(0vw) translateY(2.5vw);
+  -webkit-transform: translate(0vw,2.5vw);
+  transform: translate(0vw,2.5vw);
   font-size: 1rem;
   line-height: 1.2;
 }

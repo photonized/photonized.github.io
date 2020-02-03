@@ -13,7 +13,9 @@ jQuery(document).ready(function($){
 		//clip effect 
 		revealDuration = 600,
 		revealAnimationDelay = 1500;
-	
+
+	resize()
+
 	initHeadline();
 	
 
@@ -22,6 +24,13 @@ jQuery(document).ready(function($){
 		singleLetters($('.cd-headline.letters').find('b'));
 		//initialise headline animation
 		animateHeadline($('.cd-headline'));
+	}
+
+	function resize() {
+		var height = $(window).height();
+		$('.cd-headline').css({'-ms-transform': 'translateX(0vw) translateY('+(height/347.6).toString()+'vw)', '-webkit-transform': 'translate(0vw,'+(height/347.6).toString()+'vw)', 'transform': 'translate(0vw,'+(height/347.6).toString()+'vw)'})
+		$('.cd-words-wrapper').css({'-ms-transform': 'translateX(0vw) translateY('+(height/347.6).toString()+'vw)', '-webkit-transform': 'translate(0vw,'+(height/347.6).toString()+'vw)', 'transform': 'translate(0vw,'+(height/347.6).toString()+'vw)'})
+
 	}
 
 	function singleLetters($words) {
