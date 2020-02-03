@@ -8,8 +8,8 @@ jQuery(document).ready(function($){
 		lettersDelay = 50,
 		//type effect
 		typeLettersDelay = 75,
-		selectionDuration = 150,
-		typeAnimationDelay = selectionDuration + 250,
+		selectionDuration = 300,
+		typeAnimationDelay = selectionDuration,
 		//clip effect 
 		revealDuration = 600,
 		revealAnimationDelay = 1500;
@@ -30,7 +30,7 @@ jQuery(document).ready(function($){
 		var height = $(window).height();
 		$('.cd-headline').css({'-ms-transform': 'translateX(0vw) translateY('+(height/347.6).toString()+'vw)', '-webkit-transform': 'translate(0vw,'+(height/347.6).toString()+'vw)', 'transform': 'translate(0vw,'+(height/347.6).toString()+'vw)'})
 		$('.cd-words-wrapper').css({'-ms-transform': 'translateX(0vw) translateY('+(height/347.6).toString()+'vw)', '-webkit-transform': 'translate(0vw,'+(height/347.6).toString()+'vw)', 'transform': 'translate(0vw,'+(height/347.6).toString()+'vw)'})
-
+		$('.text').css({'-ms-transform': 'translateX(0vw) translateY('+(height/347.6).toString()+'vw)', '-webkit-transform': 'translate(0vw,'+(height/347.6).toString()+'vw)', 'transform': 'translate(0vw,'+(height/347.6).toString()+'vw)'})
 	}
 
 	function singleLetters($words) {
@@ -39,7 +39,6 @@ jQuery(document).ready(function($){
 				letters = word.text().split(''),
 				selected = word.hasClass('is-visible');
 			for (i in letters) {
-				if(word.parents('.rotate-2').length > 0) letters[i] = '<em>' + letters[i] + '</em>';
 				letters[i] = (selected) ? '<i class="in">' + letters[i] + '</i>': '<i>' + letters[i] + '</i>';
 			}
 		    var newLetters = letters.join('');
@@ -80,15 +79,16 @@ jQuery(document).ready(function($){
 		
 		if($word.parents('.cd-headline').hasClass('type')) {
 			var parentSpan = $word.parent('.cd-words-wrapper');
-			parentSpan.addClass('selected').removeClass('waiting');	
-			setTimeout(function(){ 
-				parentSpan.removeClass('selected'); 
-				$word.removeClass('is-visible').addClass('is-hidden').children('i').removeClass('in').addClass('out');
+			parentSpan.addClass('selected').removeClass('waiting');
+			setTimeout(function(){
+				parentSpan.removeClass('selected').append(" ");
+				parentSpan.append(" ");
+				$word.removeClass('is-visible').append(" ").addClass('is-hidden').children('i').removeClass('in').addClass('out');
 			}, selectionDuration);
 			setTimeout(function(){ showWord(nextWord, typeLettersDelay) }, typeAnimationDelay);
 		
 		} else if($word.parents('.cd-headline').hasClass('letters')) {
-			var bool = ($word.children('i').length >= nextWord.children('i').length) ? true : false;
+			var bool = ($word.children('i').length >= nextWord.children('i').length);
 			hideLetter($word.find('i').eq(0), $word, bool, lettersDelay);
 			showLetter(nextWord.find('i').eq(0), nextWord, bool, lettersDelay);
 
@@ -98,27 +98,14 @@ jQuery(document).ready(function($){
 				showWord(nextWord);
 			});
 
-		} else if ($word.parents('.cd-headline').hasClass('loading-bar')){
-			$word.parents('.cd-words-wrapper').removeClass('is-loading');
-			switchWord($word, nextWord);
-			setTimeout(function(){ hideWord(nextWord) }, barAnimationDelay);
-			setTimeout(function(){ $word.parents('.cd-words-wrapper').addClass('is-loading') }, barWaiting);
-
-		} else {
-			switchWord($word, nextWord);
-			setTimeout(function(){ hideWord(nextWord) }, animationDelay);
 		}
 	}
 
 	function showWord($word, $duration) {
 		if($word.parents('.cd-headline').hasClass('type')) {
 			showLetter($word.find('i').eq(0), $word, false, $duration);
-			$word.addClass('is-visible').removeClass('is-hidden');
+			$word.addClass('is-visible').removeClass('is-hidden').append();
 
-		}  else if($word.parents('.cd-headline').hasClass('clip')) {
-			$word.parents('.cd-words-wrapper').animate({ 'width' : $word.width() + 10 }, revealDuration, function(){ 
-				setTimeout(function(){ hideWord($word) }, revealAnimationDelay); 
-			});
 		}
 	}
 
@@ -157,7 +144,7 @@ jQuery(document).ready(function($){
 	}
 
 	function switchWord($oldWord, $newWord) {
-		$oldWord.removeClass('is-visible').addClass('is-hidden');
-		$newWord.removeClass('is-hidden').addClass('is-visible');
+		$oldWord.removeClass('is-visible').append(" ").addClass('is-hidden').append(" ");
+		$newWord.removeClass('is-hidden').append(" ").addClass('is-visible').append(" ");
 	}
 });
