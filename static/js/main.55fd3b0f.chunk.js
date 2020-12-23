@@ -1,2 +1,0 @@
-(this.webpackJsonpwebsite=this.webpackJsonpwebsite||[]).push([[0],{7:function(e,n,t){},8:function(e,n,t){"use strict";t.r(n);var i=t(0),s=t.n(i),a=t(2),c=t.n(a),o=(t(7),function(e){e&&e instanceof Function&&t.e(3).then(t.bind(null,9)).then((function(n){var t=n.getCLS,i=n.getFID,s=n.getFCP,a=n.getLCP,c=n.getTTFB;t(e),i(e),s(e),a(e),c(e)}))}),r=s.a.createElement("h1",{className:"greeting"},"Vlad learns frontend!");c.a.render(r,document.getElementById("root")),o()}},[[8,1,2]]]);
-//# sourceMappingURL=main.55fd3b0f.chunk.js.map
