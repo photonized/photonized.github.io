@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.4623e579.chunk.css",
+    "main.css": "/static/css/main.3cabf585.chunk.css",
     "main.js": "/static/js/main.f511bcc1.chunk.js",
     "main.js.map": "/static/js/main.f511bcc1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0836420c.js",
@@ -10,14 +10,14 @@
     "static/js/3.b500376f.chunk.js": "/static/js/3.b500376f.chunk.js",
     "static/js/3.b500376f.chunk.js.map": "/static/js/3.b500376f.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.4623e579.chunk.css.map": "/static/css/main.4623e579.chunk.css.map",
+    "static/css/main.3cabf585.chunk.css.map": "/static/css/main.3cabf585.chunk.css.map",
     "static/js/2.c01ac6ff.chunk.js.LICENSE.txt": "/static/js/2.c01ac6ff.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/Rubik-VariableFont_wght.ea640765.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.0836420c.js",
     "static/js/2.c01ac6ff.chunk.js",
-    "static/css/main.4623e579.chunk.css",
+    "static/css/main.3cabf585.chunk.css",
     "static/js/main.f511bcc1.chunk.js"
   ]
 }
