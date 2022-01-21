@@ -1,23 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.8860c0a5.chunk.css",
-    "main.js": "/static/js/main.3cde8ced.chunk.js",
-    "main.js.map": "/static/js/main.3cde8ced.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.1336a3e8.js",
-    "runtime-main.js.map": "/static/js/runtime-main.1336a3e8.js.map",
-    "static/js/2.c01ac6ff.chunk.js": "/static/js/2.c01ac6ff.chunk.js",
-    "static/js/2.c01ac6ff.chunk.js.map": "/static/js/2.c01ac6ff.chunk.js.map",
-    "static/js/3.6af13cd4.chunk.js": "/static/js/3.6af13cd4.chunk.js",
-    "static/js/3.6af13cd4.chunk.js.map": "/static/js/3.6af13cd4.chunk.js.map",
+    "main.css": "/static/css/main.4e8018dc.css",
+    "main.js": "/static/js/main.90cc3114.js",
     "index.html": "/index.html",
-    "static/css/main.8860c0a5.chunk.css.map": "/static/css/main.8860c0a5.chunk.css.map",
-    "static/js/2.c01ac6ff.chunk.js.LICENSE.txt": "/static/js/2.c01ac6ff.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/Rubik-VariableFont_wght.ea640765.ttf"
+    "main.4e8018dc.css.map": "/static/css/main.4e8018dc.css.map",
+    "main.90cc3114.js.map": "/static/js/main.90cc3114.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.1336a3e8.js",
-    "static/js/2.c01ac6ff.chunk.js",
-    "static/css/main.8860c0a5.chunk.css",
-    "static/js/main.3cde8ced.chunk.js"
+    "static/css/main.4e8018dc.css",
+    "static/js/main.90cc3114.js"
   ]
 }
