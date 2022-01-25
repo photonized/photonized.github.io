@@ -1,57 +1,40 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.2">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000; min-height: 16.0px}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="utf-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Single Page Apps for GitHub Pages&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script type="text/javascript"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// Single Page Apps for GitHub Pages</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// MIT License</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// https://github.com/rafgraph/spa-github-pages</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// This script takes the current url and converts the path and query</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// string into just a query string, and then redirects the browser</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// to the new url with only a query string and hash fragment,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// e.g. https://www.foo.tld/one/two?a=b&amp;c=d#qwe, becomes</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// https://www.foo.tld/?/one/two&amp;a=b~and~c=d#qwe</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// Note: this 404.html file must be at least 512 bytes for it to work</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// with Internet Explorer (it is currently &gt; 512 bytes)</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// If you're creating a Project Pages site and NOT using a custom domain,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// then set pathSegmentsToKeep to 1 (enterprise users may need to set it to &gt; 1).</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// This way the code will only replace the route part of the path, and not</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// the real directory in which the app resides, for example:</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// https://username.github.io/repo-name/one/two?a=b&amp;c=d#qwe becomes</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// https://username.github.io/repo-name/?/one/two&amp;a=b~and~c=d#qwe</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// Otherwise, leave pathSegmentsToKeep as 0.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>var pathSegmentsToKeep = 0;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>var l = window.location;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>l.replace(</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&amp;/g, '~and~') +</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>(l.search ? '&amp;' + l.search.slice(1).replace(/&amp;/g, '~and~') : '') +</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>l.hash</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;body&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Single Page Apps for GitHub Pages</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script takes the current url and converts the path and query
+      // string into just a query string, and then redirects the browser
+      // to the new url with only a query string and hash fragment,
+      // e.g. https://www.foo.tld/one/two?a=b&c=d#qwe, becomes
+      // https://www.foo.tld/?/one/two&a=b~and~c=d#qwe
+      // Note: this 404.html file must be at least 512 bytes for it to work
+      // with Internet Explorer (it is currently > 512 bytes)
+
+      // If you're creating a Project Pages site and NOT using a custom domain,
+      // then set pathSegmentsToKeep to 1 (enterprise users may need to set it to > 1).
+      // This way the code will only replace the route part of the path, and not
+      // the real directory in which the app resides, for example:
+      // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
+      // https://username.github.io/repo-name/?/one/two&a=b~and~c=d#qwe
+      // Otherwise, leave pathSegmentsToKeep as 0.
+      var pathSegmentsToKeep = 0;
+
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+
+    </script>
+  </head>
+  <body>
+  </body>
 </html>
